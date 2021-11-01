@@ -31,11 +31,14 @@ float ecuaciones_multiplicacion(float numero1,float numero2){
 
 long int ecuaciones_factorisacion(long int numero){
 	long int resultado;
-	if(numero==0){
-		return 1;
-	}
-	else{
-		resultado=numero*ecuaciones_factorisacion(numero-1);
+	resultado=-1;
+	if(numero>=0){
+		if(numero==0){
+			return 1;
+		}
+		else{
+			resultado=numero*ecuaciones_factorisacion(numero-1);
+		}
 	}
 	return resultado;
 }

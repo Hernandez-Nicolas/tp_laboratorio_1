@@ -58,9 +58,19 @@ int main(){
 				else{
 					printf("El resultado de la divicion es: %.2f\n",cociente);
 				}
-				printf("El resultado de A*B es: %.2f\n"
-						"El factorial de A es: %ld\n"
-						"El factorial de B es: %ld\n",producto,factorialA,factorialB);
+				printf("El resultado de A*B es: %.2f\n",producto);
+				if(factorialA==-1){
+					printf("El Factorial no puede sen negativo\n");
+				}
+				else{
+					printf("El factorial de A es: %ld\n",factorialA);
+				}
+				if(factorialB==-1){
+					printf("El Factorial no puede sen negativo\n");
+				}
+				else{
+					printf("El factorial de B es: %ld\n",factorialB);
+				}
 			}
 			break;
 		default:
