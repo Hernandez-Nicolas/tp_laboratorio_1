@@ -3,7 +3,7 @@
 #include"ArrayEmployees.h"
 #include"inputs.h"
 
-#define TAM 3
+#define TAM 1000
 
 int main(){
 	setbuf(stdout,NULL);
@@ -26,7 +26,7 @@ int main(){
 		printf("1) Alta\n"
 				"2) Modificar\n"
 				"3) Baja\n"
-				"4) Modificar\n"
+				"4) Imprimir\n"
 				"5) Salir\n\n");
 		eleccion=inputs_entero("Ingrese su eleccion: ",1,5);
 		switch(eleccion){
@@ -79,6 +79,7 @@ int main(){
 				break;
 			case 4:
 				if(bandera==1){
+					sortEmployees(lista,TAM,1);
 					printEmployees(lista,TAM);
 					salaryEmployees(lista,TAM);
 				}
